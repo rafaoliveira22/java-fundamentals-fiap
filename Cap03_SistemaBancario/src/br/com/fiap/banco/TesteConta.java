@@ -4,16 +4,15 @@ public class TesteConta {
 
 	public static void main(String[] args) {
 		Conta cc = new Conta();
-		cc.saldo = 178.2;
-		cc.agencia = 123;
-		cc.numero = 456;
-		cc.depositar(1000);
-		System.out.println("Saldo atual na conta corrente: " + cc.verificarSaldo());
+		cc.depositar(178.2);
+		cc.setAgencia(124);
+		cc.setNumero(456);
+		System.out.println("Saldo atual na conta corrente: " + cc.getSaldo());
 		
 		
 		Conta poupanca = new Conta(123, 321, 583.52);
 		poupanca.retirar(500);
-		System.out.println("Saldo atual na conta poopança: " + poupanca.verificarSaldo());
+		System.out.println("Saldo atual na conta poopança: " + poupanca.getSaldo());
 		
 		
 		Conta cc2 = null;
